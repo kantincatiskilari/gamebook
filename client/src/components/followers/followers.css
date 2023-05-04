@@ -1,0 +1,69 @@
+.followers{
+    flex: 4;
+}
+
+.followersWrapper{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.followerImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.followerInfo{
+    margin-left:10px;
+}
+
+.followerInfo .followerUsername{
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.followerInfo .followerUsername:hover{
+    text-decoration: underline;
+}
+
+.followerInfo .followerBio{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.followerButton{
+    height: 30px;
+}
+
+.defaultFollowerButton{
+    background-color: black !important;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.followingFollowerButton:hover{
+    background-color: black !important;
+    color: #fff;
+    
+}
+
+.defaultFollowerButton:hover{
+    background-color: #fff !important;
+    color: #000;
+}
+
+.followerButton button{
+   position: absolute;
+   right: 0; 
+   padding: 3px 15px;
+   border-radius: 20px;
+   background-color: white;
+   font-weight: 600;
+   border: 1px solid gray;
+   cursor: pointer;
+   transition: .3 ease all;
+}

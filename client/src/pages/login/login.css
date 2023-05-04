@@ -1,0 +1,117 @@
+.login{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 140px;
+    background-image: url("https://images.pexels.com/photos/14541065/pexels-photo-14541065.jpeg");
+    background-size:cover;
+    background-position: 20% 40%;
+    background-repeat: no-repeat;
+    
+}
+
+.loginForm{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.input_field{
+    position: relative;
+}
+
+.input_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input_field span::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  .input_field input:focus ~ label,
+  .input_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+  }
+  .input_field input:focus ~ span::before,
+  .input_field input:valid ~ span::before{
+    width: 100%;
+  }
+
+.formInput{
+    padding: 10px 0;
+}
+
+
+.loginForm button{
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .2s ease all;
+}
+
+.loginForm button:hover{
+    background-color: #1DA1F2;
+    border-radius: 5px;
+}
+
+.loginRegisterButton button{
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1DA1F2;
+    cursor: pointer;
+    transition: .2s ease all;
+    margin-left: 20px;
+}
+
+.loginRegisterButton span{
+    color: white;
+}
+
+.loginRegisterButton{
+    margin: 20px;
+}
+
+.loginError{
+    top: 35px;
+    position: absolute;
+    font-size: 11px;
+    color: red;
+}
+
+.loginSubmitError{
+    position: absolute;
+    bottom: 25px;
+    color: red;
+    font-size: 13px;
+}

@@ -1,0 +1,70 @@
+.userSearchWrapper{
+    display: flex;
+}
+
+.userSearch{
+    flex: 4;
+}
+
+.searchAlert{
+    margin-top: 30px;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;    
+}
+
+.userSearchContainer{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.userSearchImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.userSearchInfo{
+    margin-left:10px;
+}
+
+.userSearchInfo .userSearchUsername{
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.userSearchInfo .userSearchUsername:hover{
+    text-decoration: underline;
+}
+
+.userSearchInfo .userSearchBio{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.userSearchButton{
+    height: 30px;
+}
+
+.userSearchButton button{
+    position: absolute;
+    right: 0; 
+    padding: 3px 15px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: .3 ease all;
+ }
+
+ .userSearchButton button:hover{
+    background-color: black !important;
+    color: #fff !important;
+ }

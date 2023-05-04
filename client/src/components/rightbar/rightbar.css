@@ -1,0 +1,126 @@
+.rightbar{
+    flex: 4;
+    margin-right: 200px;
+    height: calc(100vh - 100px);
+    margin-top: 20px;
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid lightblue;
+    padding-left: 30px;
+}
+
+.whoToFollow{
+    box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+
+.whoToFollowTitle{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.suggestedUser{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.suggestedUser img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.suggestedUsername{
+    font-weight: 600;
+    width: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.suggestedUsername:hover{
+    text-decoration: underline;
+}
+
+.suggestedUserFollow button{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .6px;
+    transition: .2s ease all;
+}
+
+.unfollowedUser:hover{
+    background-color: #fff;
+    border:1px solid black;
+    color: #000;
+}
+
+.followedUser{
+    background-color: #fff !important;
+    border:1px solid black !important;
+    color: #000 !important;
+}
+
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.footer ul li{
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer ul li:hover{
+    text-decoration: underline;
+}
+
+.copyright .logo {
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: #1DA1F2;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 30px 0;
+    color: white;
+}
+
+.copyright span{
+    font-size: 14px;
+    font-weight: 300;
+}

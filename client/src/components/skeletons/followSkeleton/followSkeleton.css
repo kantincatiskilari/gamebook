@@ -1,0 +1,27 @@
+.whoToFollow{
+   box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   width: 90%;
+   border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 0;
+
+}
+
+.suggestedUser{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   margin: 10px 0;
+   width: 200px;
+}
+
+
+
+
+
+

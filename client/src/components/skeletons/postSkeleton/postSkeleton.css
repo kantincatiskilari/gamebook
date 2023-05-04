@@ -1,0 +1,17 @@
+.skeletonContainer{
+   margin-top: 30px;
+   box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 480px;
+}
+
+.topSkeleton{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}

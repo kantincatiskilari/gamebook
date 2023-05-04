@@ -1,0 +1,221 @@
+.post{
+    margin-top: 30px;
+    box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    padding: 10px 20px;
+    cursor: pointer;  
+}
+
+.post:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.post:hover .postCommentContainer-open{
+    background-color: #fff;
+}
+
+.postUserInfo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.postUserImg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.postUser{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.postUser:hover{
+    text-decoration: underline;
+}
+
+.postDate{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.popup{
+    display: none;
+}
+
+.popup-opened{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    cursor: auto;
+    background: #ccc;
+}
+
+.popupWrapper{
+    border-radius: 50px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #1DA1F2;
+    box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+}
+
+.popupQuestion{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.popupButtons{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popupButtons button:first-child{
+    background-color: lightgray;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+
+    cursor: pointer;
+    border: rgb(88, 3, 3) ;
+    transition: .3s ease all;
+}
+
+.popupButtons button:first-child:hover{
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.popupButtons button:last-child{
+    
+    background-color: rgba(252, 14, 14, 0.671);
+    border: none;
+    color: #fff;
+    padding: 7px 20px;
+
+    cursor: pointer;
+    border: red ;
+    transition: .3s ease all;
+}
+
+.popupButtons button:last-child:hover{
+    background-color: red;
+    border-radius: 20px;
+}
+
+.postDeleteIcon{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.postDeleteIcon svg{
+    font-size: 22px;
+}
+
+.postDeleteIcon:hover{
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.postDeleteIcon svg{
+    color: palevioletred;
+}
+
+.postDescInfo{
+    margin: 20px 0;
+}
+
+.postStatistics{
+    display: flex;
+    gap: 40px;
+}
+
+.postStatistics div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    
+}
+
+.postStatistics div span{
+    font-size: 12px;
+    color: gray;
+}
+
+.postView:hover span,
+.postComment:hover span{
+    color: rgb(41, 95, 243);
+}
+
+.postView:hover svg, .postComment:hover svg{
+    color: rgb(41, 95, 243);
+}
+
+.postIcon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postIcon svg{
+    font-size: 20px;
+}
+
+.postComment:hover .postIcon{
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.postView:hover .postIcon{
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.postLike:hover span, .postLike:hover svg{
+    color: red;
+}
+
+.postLike:hover .postIcon{
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.postCommentContainer{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.postCommentContainer-open{
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    margin-top: 5px;
+    padding: 10px;
+}

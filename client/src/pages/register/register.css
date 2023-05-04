@@ -1,0 +1,92 @@
+.register{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.registerForm{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registerInput{
+    border: none;
+}
+
+.formInput{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 200px;
+    height: 30px;
+}
+
+.registerForm button, .successSign{
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .2s ease all;
+}
+
+.registerForm button:hover, .successSign{
+    background-color: #1DA1F2;
+}
+
+.registerLoginButton button, .successSign{
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1DA1F2;
+    cursor: pointer;
+    transition: .2s ease all;
+    margin-left: 20px;
+}
+
+.registerLoginButton{
+    margin: 20px;
+}
+
+.error{
+    color: red;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.registerError{
+    top: 35px;
+    position: absolute;
+    font-size: 11px;
+    color: red;
+}
+
+.registerSubmitError{
+    position: absolute;
+    bottom: 25px;
+    color: red;
+    font-size: 13px;
+}

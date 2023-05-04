@@ -1,0 +1,16 @@
+.followWrapper{
+    margin: 20px 50px;
+    display: flex;
+}
+
+.followContainer{
+    flex: 4;
+}
+
+.followContainer .title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+

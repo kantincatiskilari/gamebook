@@ -1,0 +1,81 @@
+.leftbar{
+    flex: 2;
+    position: sticky;
+    height: calc(100vh - 100px);
+    width: 200px;
+    top: 80px;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-right:1px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    color: gray;
+    width: 70%;
+    height: 40px;
+    transition: .2s ease all;
+}
+
+.icon div{
+    width: 50px;
+}
+
+.icon:hover{
+    background-color: lightblue;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.icon svg{
+    font-size: 35px;
+}
+
+.profileWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 45px;
+}
+
+.profileWrapper:hover{
+    background-color: lightblue;
+    border-radius: 30px;
+    transition: .2s ease all;
+}
+
+.profileImg{
+    height: 40px;
+    width: 40px;
+}
+
+.profileImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.profileIcon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

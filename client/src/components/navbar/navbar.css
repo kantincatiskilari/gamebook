@@ -1,0 +1,171 @@
+.navbar{
+    height: 60px;
+    background: radial-gradient(circle, #33a1dc, #0d84ad, #006681, #004a58, #062e34);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+}
+
+.logo{
+    background: linear-gradient(to right bottom, #020523, #0c1038, #20134b, #3a105c, #570069);
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+.center .searchBar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 30px;
+}
+
+.center{
+    margin-right: 50px;
+}
+
+.center .searchBar svg{
+    margin:0 5px;
+    cursor: pointer;
+    color: gray;
+}
+
+.search{
+    border: none;
+    background-color: transparent;
+    padding: 7px 16px;
+    outline: none;
+}
+
+.right{
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.profileUsername{
+    font-weight: 600;
+    color: white;
+}
+
+.profileUsername:hover{
+    background-color: inherit !important;
+}
+
+.notificationContainer{
+    border: 3px solid white;
+    display: none;
+    visibility:hidden;
+    position: absolute;
+    top: 50px;
+    z-index: 999;
+    width: 250px;
+    height: fit-content;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin-right: 70px;
+    color: whitesmoke;
+}
+
+.notificationContainer:hover{
+    border-radius: 5px !important;
+}
+
+.notificationUsername{
+    font-weight: 600;
+}
+
+.notificationDetail div{
+    font-weight: 600;
+    padding-top: 1px;
+}
+
+.notificationDetail div:hover{
+    border-bottom: 1px solid white;
+    border-radius: 0px !important;
+    cursor: pointer;
+}
+
+.right div{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right div:hover{
+    background-color: lightblue;
+    border-radius:50%;
+}
+
+.right div svg{
+    transform: scale(.9);
+    transition: .2s ease transform;
+}
+.right div:hover svg{
+    transform: scale(1);
+}
+
+.right svg{
+    cursor: pointer;
+    
+}
+
+.right img{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right .notifications, .right .messageBox{
+    position: relative;
+}
+
+.notCount,
+.msgCount
+{   
+    border: 1px solid #1DA1F2;
+    font-weight: 600;
+    font-size: 13px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1DA1F2;
+    background-color: #fff;
+    border-radius: 50%;
+}
+

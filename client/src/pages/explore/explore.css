@@ -1,0 +1,7 @@
+.explorerWrapper{
+    display: flex;
+}
+
+.postContainer{
+    flex: 4;
+}

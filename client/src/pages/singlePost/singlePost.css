@@ -1,0 +1,131 @@
+.singlePostPage{
+    display: flex;
+}
+
+.singlePost{
+    flex: 4;
+}
+
+.singlePostComment{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.singlePostContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin:-30px 20px;
+    height: fit-content;
+    padding: 20px;
+}
+
+.singlePostContainer .post{
+    width: 110%;
+    margin-left: -40px;
+    padding-right: 61px;
+}
+
+.popup{
+    display: none;
+    
+}
+
+.popup-opened{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    cursor: auto;
+    background: #ccc;
+}
+
+.popupWrapper{
+    border-radius: 50px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #1DA1F2;
+    box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(29,161,242,0.37);
+}
+
+.popupQuestion{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.popupButtons{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popupButtons button:first-child{
+    background-color: lightgray;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+
+    cursor: pointer;
+    border: rgb(88, 3, 3) ;
+    transition: .3s ease all;
+}
+
+.popupButtons button:first-child:hover{
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.popupButtons button:last-child{
+    
+    background-color: rgba(252, 14, 14, 0.671);
+    border: none;
+    color: #fff;
+    padding: 7px 20px;
+
+    cursor: pointer;
+    border: red ;
+    transition: .3s ease all;
+}
+
+.popupButtons button:last-child:hover{
+    background-color: red;
+    border-radius: 20px;
+}
+
+
+.singlePostContainer .postStatistics{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.postStatisticDatas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.postStatisticsIcons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.postsAboutPost{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
